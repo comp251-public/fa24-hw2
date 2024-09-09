@@ -5,3 +5,7 @@ all: collatz
 
 collatz: collatz.o
 	$(CC) -o $@ $^
+
+clean:
+	rm -f collatz *.o *~
+
